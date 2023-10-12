@@ -227,7 +227,7 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
   formData.forEach(function (value, key) {
     console.log(key, value);
   });
-  fetch("https://street-sign-widget.vercel.app/", {
+  fetch("sendMail.php", {
     method: "post",
     body: formData,
   })
